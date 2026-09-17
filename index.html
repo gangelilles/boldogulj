@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#111">
+<title>Boldogulj!</title>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/buildings.css">
+<link rel="stylesheet" href="css/hud.css">
+<link rel="stylesheet" href="css/hud-mobile.css">
+<link rel="stylesheet" href="css/hud-compact.css">
+<link rel="stylesheet" href="css/electronics.css">
+</head>
+<body>
+
+<div class="crt"></div>
+<div class="screen" id="screen-setup">
+  <div class="setup-hero">
+    <div class="setup-kicker">PIXEL LIFE SIMULATOR</div>
+    <h1> BOLDOGULJ! </h1>
+    <div class="setup-subtitle">Meló. Pénz. Tanulás. Szerencse.</div>
+  </div>
+
+  <div class="setup-panel">
+    <div class="setup-section-head">
+      <span>JÁTÉKOSOK</span><span class="setup-hint">1–4 játékos</span>
+    </div>
+    <div class="playercount-row" id="playercount-buttons"></div>
+    <div id="player-setup-list" class="player-setup-grid"></div>
+  </div>
+
+  <div class="setup-panel setup-goal-panel">
+    <div class="setup-section-head">
+      <span>NEHÉZSÉG</span><span class="setup-hint">A célok szigorúsága</span>
+    </div>
+    <div id="goal-selectors"></div>
+  </div>
+
+  <div class="setup-start-row">
+    <button id="btn-start-game" class="start-game-btn">JÁTÉK INDÍTÁSA <span>▶</span></button>
+  </div>
+</div>
+
+<div class="screen hidden" id="screen-game">
+  <div class="top-bar" id="top-bar"></div>
+  <div class="board-wrap">
+    <div class="board" id="board"></div>
+    <div class="side">
+      <div class="stat-panel" id="location-panel"></div>
+      <div class="stat-panel" id="context-panel"></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16px;"><div class="stat-title">&#128220; NAPLÓ</div><div class="log" id="log"></div></div>
+</div>
+
+<div class="screen hidden" id="screen-win"><div class="card winner-box" id="winner-box"></div></div>
+
+<div class="modal-overlay hidden" id="newspaper-modal">
+  <div class="newspaper" id="newspaper-content"></div>
+</div>
+
+<div class="modal-overlay hidden" id="arrival-modal">
+  <div class="arrival-modal-box" id="arrival-modal-content"></div>
+</div>
+
+<div class="modal-overlay hidden" id="action-modal">
+  <div class="action-modal-box" id="action-modal-content"></div>
+</div>
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+
+
+
+<script src="js/game.js"></script>
+</body>
+</html>
